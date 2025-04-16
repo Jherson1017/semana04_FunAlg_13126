@@ -25,10 +25,10 @@ namespace Ejercicio1
             c = int.Parse(Console.ReadLine());
             disc = (b * b) - (4 * a * c);
 
-            if(disc > 0)
+            if (disc > 0)
             {
-                x1 = (-b + Math.Sqrt(disc))/ 2 * a;
-                x2 = (-b - Math.Sqrt(disc))/ 2 * a;
+                x1 = (-b + Math.Sqrt(disc)) / 2 * a;
+                x2 = (-b - Math.Sqrt(disc)) / 2 * a;
                 Console.WriteLine("X1: " + x1);
                 Console.WriteLine("X2: " + x2);
             }
@@ -38,12 +38,14 @@ namespace Ejercicio1
                 {
                     x1 = -b / 2 * a;
                     Console.WriteLine("X1: " + x1);
-                }else
+                }
+                else
                 {
                     Console.WriteLine("No tiene soluciones");
                 }
+
+                Console.ReadKey();
             }
-            Console.ReadKey();
         }
     }
 }
